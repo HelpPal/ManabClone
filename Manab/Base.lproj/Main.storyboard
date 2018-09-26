@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Manab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ubF-Vl-FX1">
+                                <rect key="frame" x="142" y="189" width="91" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="dZG-vj-erY"/>
+                                    <constraint firstAttribute="height" constant="65" id="yUo-w2-8l1"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-KL-5Dq">
+                                <rect key="frame" x="55" y="377" width="265" height="108"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZh-FG-exI">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="41"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_username" translatesAutoresizingMaskIntoConstraints="NO" id="TAb-lR-bhz">
+                                                <rect key="frame" x="7" y="8" width="18" height="18"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ユーザー名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rxQ-eS-Lrj">
+                                                <rect key="frame" x="38" y="0.0" width="227" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YL2-eH-gAG">
+                                                <rect key="frame" x="0.0" y="33" width="265" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-Ig-TGn">
+                                        <rect key="frame" x="0.0" y="67" width="265" height="41"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_password" translatesAutoresizingMaskIntoConstraints="NO" id="2Ec-XG-wp6">
+                                                <rect key="frame" x="7" y="8" width="16" height="19"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7r-JB-yoA">
+                                                <rect key="frame" x="38" y="0.0" width="227" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwZ-12-WCR">
+                                                <rect key="frame" x="0.0" y="33" width="265" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="i6D-Ig-TGn" firstAttribute="leading" secondItem="2gr-KL-5Dq" secondAttribute="leading" id="73t-r4-HZe"/>
+                                    <constraint firstAttribute="height" constant="108" id="9tx-qm-uWR"/>
+                                    <constraint firstAttribute="trailing" secondItem="i6D-Ig-TGn" secondAttribute="trailing" id="Ifu-zg-jjr"/>
+                                    <constraint firstItem="i6D-Ig-TGn" firstAttribute="top" secondItem="DZh-FG-exI" secondAttribute="bottom" constant="26" id="Job-Dr-an5"/>
+                                    <constraint firstAttribute="trailing" secondItem="DZh-FG-exI" secondAttribute="trailing" id="pvn-m9-mdb"/>
+                                    <constraint firstItem="DZh-FG-exI" firstAttribute="leading" secondItem="2gr-KL-5Dq" secondAttribute="leading" id="q7Y-Wz-qfO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P44-Sy-L1D">
+                                <rect key="frame" x="55" y="626" width="265" height="46"/>
+                                <color key="backgroundColor" red="0.72156862745098038" green="0.0" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="j1j-9p-TQH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gr-KL-5Dq" secondAttribute="trailing" constant="55" id="1On-T9-48y"/>
+                            <constraint firstItem="ubF-Vl-FX1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="7ek-cY-NAH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P44-Sy-L1D" secondAttribute="trailing" constant="55" id="Est-Ry-mrz"/>
+                            <constraint firstItem="P44-Sy-L1D" firstAttribute="top" secondItem="2gr-KL-5Dq" secondAttribute="bottom" constant="141" id="JFc-lt-Cf7"/>
+                            <constraint firstItem="2gr-KL-5Dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="LCT-b0-RZ0"/>
+                            <constraint firstItem="P44-Sy-L1D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Z6Y-I1-bx2"/>
+                            <constraint firstItem="2gr-KL-5Dq" firstAttribute="top" secondItem="ubF-Vl-FX1" secondAttribute="bottom" constant="123" id="mwN-4z-Ads"/>
+                            <constraint firstItem="ubF-Vl-FX1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tAO-OJ-Hce"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P44-Sy-L1D" secondAttribute="bottom" constant="106" id="wP7-XJ-HJP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.96551724137932"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_password" width="16" height="19"/>
+        <image name="icon_username" width="18" height="18"/>
+        <image name="logo" width="91" height="65"/>
+    </resources>
+</document>
