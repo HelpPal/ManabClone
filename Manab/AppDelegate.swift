@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Manab
 //
-//  Created by 123 on 2018/09/26.
-//  Copyright © 2018 Lily. All rights reserved.
+//  Created by 123 on 9/26/18.
+//  Copyright © 2018 123. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Add this if you only want to change Selected Image color
+//        // and/or selected image text
+//        UITabBar.appearance(). = UIColor.
+//        [[UITabBar appearance] setTintColor:[UIColor redColor]];
+//
+//        // Add this code to change StateNormal text Color,
+//        [UITabBarItem.appearance setTitleTextAttributes:
+//            @{NSForegroundColorAttributeName : [UIColor greenColor]}
+//            forState:UIControlStateNormal];
+//
+//        // then if StateSelected should be different, you should add this code
+//        [UITabBarItem.appearance setTitleTextAttributes:
+//            @{NSForegroundColorAttributeName : [UIColor purpleColor]}
+//            forState:UIControlStateSelected];
+        
+//        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
+//
+//        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
+//        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont, NSForegroundColorAttributeName:UIColor.whiteColor()], forState: UIControlState.Normal)
+        
         return true
     }
 

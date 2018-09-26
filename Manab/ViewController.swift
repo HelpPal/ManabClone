@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Manab
 //
-//  Created by 123 on 2018/09/26.
-//  Copyright © 2018 Lily. All rights reserved.
+//  Created by 123 on 9/26/18.
+//  Copyright © 2018 123. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

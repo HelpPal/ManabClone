@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BM0-k9-Grz">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LYI-S4-ngc">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="BM0-k9-Grz" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jf4-v3-YnP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BgJ-SL-3ch"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fi4-gh-j3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1335" y="119"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -28,7 +45,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-KL-5Dq">
                                 <rect key="frame" x="55" y="377" width="265" height="108"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZh-FG-exI">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZh-FG-exI">
                                         <rect key="frame" x="0.0" y="0.0" width="265" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_username" translatesAutoresizingMaskIntoConstraints="NO" id="TAb-lR-bhz">
@@ -36,7 +53,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ユーザー名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rxQ-eS-Lrj">
-                                                <rect key="frame" x="38" y="0.0" width="227" height="30"/>
+                                                <rect key="frame" x="38" y="2" width="227" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,8 +66,11 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="CgI-OW-EEE"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-Ig-TGn">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-Ig-TGn">
                                         <rect key="frame" x="0.0" y="67" width="265" height="41"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_password" translatesAutoresizingMaskIntoConstraints="NO" id="2Ec-XG-wp6">
@@ -58,7 +78,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7r-JB-yoA">
-                                                <rect key="frame" x="38" y="0.0" width="227" height="30"/>
+                                                <rect key="frame" x="38" y="2" width="227" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -71,12 +91,17 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="f0J-tI-h5p"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="i6D-Ig-TGn" firstAttribute="leading" secondItem="2gr-KL-5Dq" secondAttribute="leading" id="73t-r4-HZe"/>
+                                    <constraint firstAttribute="bottom" secondItem="i6D-Ig-TGn" secondAttribute="bottom" id="9aS-1p-h2R"/>
                                     <constraint firstAttribute="height" constant="108" id="9tx-qm-uWR"/>
+                                    <constraint firstItem="DZh-FG-exI" firstAttribute="top" secondItem="2gr-KL-5Dq" secondAttribute="top" id="FV1-ci-AUJ"/>
                                     <constraint firstAttribute="trailing" secondItem="i6D-Ig-TGn" secondAttribute="trailing" id="Ifu-zg-jjr"/>
                                     <constraint firstItem="i6D-Ig-TGn" firstAttribute="top" secondItem="DZh-FG-exI" secondAttribute="bottom" constant="26" id="Job-Dr-an5"/>
                                     <constraint firstAttribute="trailing" secondItem="DZh-FG-exI" secondAttribute="trailing" id="pvn-m9-mdb"/>
@@ -93,6 +118,9 @@
                                 <state key="normal" title="ログイン">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="lpp-yv-VFj" kind="push" id="UfK-TL-fNI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,15 +137,109 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2jC-BH-o8o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.96551724137932"/>
+            <point key="canvasLocation" x="-622" y="119"/>
+        </scene>
+        <!--サーチ-->
+        <scene sceneID="nvH-0b-Ofp">
+            <objects>
+                <viewController id="oj6-Kl-YhV" customClass="SearchVC" customModule="Manab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mqp-Jz-fjE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aPm-m7-tXp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="サーチ" image="tab_un_search" selectedImage="tab_search" id="ECN-Ds-pD0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZs-9o-i7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-213"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="tdt-qG-4mM">
+            <objects>
+                <viewController id="PB1-PR-4Da" customClass="FavorVC" customModule="Manab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwD-nq-TmM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3VE-s6-CXP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="お気に入り" image="tab_un_favor" selectedImage="tab_favor" id="YvE-3x-DRZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNd-cH-cNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="476"/>
+        </scene>
+        <!--プロフィール-->
+        <scene sceneID="4Nl-GS-66M">
+            <objects>
+                <viewController id="h3z-u8-hxR" customClass="UserVC" customModule="Manab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOP-fy-5l8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cV3-3r-w8K"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="プロフィール" image="tab_un_user" selectedImage="tab_user" id="oax-bQ-vcL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbT-xC-0SB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="1161"/>
+        </scene>
+        <!--自宅-->
+        <scene sceneID="7BW-1u-fTE">
+            <objects>
+                <viewController id="915-sM-X8D" customClass="HomeVC" customModule="Manab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5VL-Rk-bM8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hkY-pi-xOp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="自宅" image="tab_un_home" selectedImage="tab_home" id="cEC-Vg-0Te"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVd-UX-8iC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-894"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jtL-Tb-ktD">
+            <objects>
+                <tabBarController id="lpp-yv-VFj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8hJ-bc-7tg"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GGT-iC-eAV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="915-sM-X8D" kind="relationship" relationship="viewControllers" id="5Vw-fD-LGq"/>
+                        <segue destination="oj6-Kl-YhV" kind="relationship" relationship="viewControllers" id="ZgQ-he-f5a"/>
+                        <segue destination="PB1-PR-4Da" kind="relationship" relationship="viewControllers" id="rHR-D0-vNJ"/>
+                        <segue destination="h3z-u8-hxR" kind="relationship" relationship="viewControllers" id="SmA-Xs-NeU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Uy-Jr-Kqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="119"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon_password" width="16" height="19"/>
         <image name="icon_username" width="18" height="18"/>
         <image name="logo" width="91" height="65"/>
+        <image name="tab_favor" width="24" height="24"/>
+        <image name="tab_home" width="30" height="26"/>
+        <image name="tab_search" width="23" height="23"/>
+        <image name="tab_un_favor" width="24" height="24"/>
+        <image name="tab_un_home" width="30" height="26"/>
+        <image name="tab_un_search" width="23" height="23"/>
+        <image name="tab_un_user" width="20" height="20"/>
+        <image name="tab_user" width="20" height="20"/>
     </resources>
 </document>
