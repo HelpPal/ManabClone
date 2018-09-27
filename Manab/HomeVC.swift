@@ -8,14 +8,35 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeDetailCell: UITableViewCell {
+    
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var lblTitle: UILabel!
+    @IBOutlet var imgThumb: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        mainView.layer.cornerRadius = 8.0
+        mainView.clipsToBounds = true
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+}
 
+class HomeVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
+
+    @IBOutlet var hometableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.tabBarItem.selectedImage = UIImage(named:"tab_home")?.withRenderingMode(.alwaysOriginal)
         self.tabBarItem.image = UIImage(named:"tab_un_home")?.withRenderingMode(.alwaysOriginal)
+        self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.init(red: 184.0/255.0, green: 0, blue: 38.0/255.0, alpha: 1.0)], for: .selected)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +44,19 @@ class HomeVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3 // your number of cell here
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // your cell coding
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath as IndexPath)
+            as! HomeDetailCell
+        cell.lblTitle.text = "レッスン " + String(indexPath.row + 1)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // cell selected code here
+    }
 }

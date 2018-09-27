@@ -32,6 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            @{NSForegroundColorAttributeName : [UIColor purpleColor]}
 //            forState:UIControlStateSelected];
         
+//        let barbuttonFont = UIFont.systemFont(ofSize: 5)// (name: "Ubuntu", size: 15) ?? UIFont.systemFont(ofSize: 15)
+//        
+//        //        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
+//        
+//        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: barbuttonFont, NSAttributedStringKey.foregroundColor:UIColor.red], for: UIControlState.selected)
+//        let navbarFont = UIFont(name: "Ubuntu", size: 17) ?? UIFont.systemFontOfSize(17)
 //        let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
 //
 //        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]

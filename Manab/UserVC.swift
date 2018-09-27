@@ -16,6 +16,7 @@ class UserVC: UIViewController {
         // Do any additional setup after loading the view.
         self.tabBarItem.selectedImage = UIImage(named:"tab_user")?.withRenderingMode(.alwaysOriginal)
         self.tabBarItem.image = UIImage(named:"tab_un_user")?.withRenderingMode(.alwaysOriginal)
+        self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.init(red: 184.0/255.0, green: 0, blue: 38.0/255.0, alpha: 1.0)], for: .selected)
     }
 
     override func didReceiveMemoryWarning() {
