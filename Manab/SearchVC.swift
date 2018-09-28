@@ -29,6 +29,11 @@ class SearchDetailCell: UITableViewCell {
 class SearchVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var searchtableview: UITableView!
+    @IBOutlet var btn1: UIButton!
+    @IBOutlet var btn2: UIButton!
+    @IBOutlet var btn3: UIButton!
+    @IBOutlet var commonView: UIView!
+    @IBOutlet weak var mainDropDown: DropDown!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +42,22 @@ class SearchVC: UIViewController , UITableViewDelegate, UITableViewDataSource {
         self.tabBarItem.selectedImage = UIImage(named:"tab_search")?.withRenderingMode(.alwaysOriginal)
         self.tabBarItem.image = UIImage(named:"tab_un_search")?.withRenderingMode(.alwaysOriginal)
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.init(red: 184.0/255.0, green: 0, blue: 38.0/255.0, alpha: 1.0)], for: .selected)
+        
+        btn1.layer.cornerRadius = 8.0
+        btn1.clipsToBounds = true
+        
+        btn2.layer.cornerRadius = 8.0
+        btn2.clipsToBounds = true
+        
+        btn3.layer.cornerRadius = 8.0
+        btn3.clipsToBounds = true
+        
+        mainDropDown.layer.cornerRadius = 8.0
+        mainDropDown.clipsToBounds = true
+        
+        let option =  Options()
+        mainDropDown.optionArray = option.countries
+        mainDropDown.optionIds = option.ids
     }
 
     override func didReceiveMemoryWarning() {
